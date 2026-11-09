@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#285878">
+  <title>五浦海岸 家族旅行プラン</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #263746;
+      --muted: #647684;
+      --blue: #285878;
+      --line: #dce5e9;
+      --paper: #f4f7f6;
+      --white: #fff;
+      --accent: #e6f0f3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+        "Yu Gothic", Meiryo, sans-serif;
+    }
+    main { width: min(900px, calc(100% - 32px)); margin: 28px auto 48px; }
+    header {
+      padding: 30px clamp(20px, 5vw, 44px);
+      color: var(--white);
+      background: linear-gradient(130deg, #285878, #397991);
+      border-radius: 16px;
+    }
+    h1 { margin: 0; font-size: clamp(1.5rem, 5vw, 2rem); line-height: 1.3; }
+    header p { margin: 10px 0 0; opacity: .92; }
+    section {
+      margin-top: 20px;
+      padding: clamp(20px, 4vw, 30px);
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: 0 5px 20px #2637460a;
+    }
+    h2 { margin: 0 0 18px; color: var(--blue); font-size: 1.25rem; }
+    h3 { margin: 0 0 6px; font-size: 1rem; }
+    .overview {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+    }
+    .overview p { margin: 0; padding: 12px 14px; background: var(--paper); border-radius: 9px; }
+    .overview strong { display: block; color: var(--muted); font-size: .82rem; }
+    ol { margin: 0; padding: 0; list-style: none; }
+    li {
+      display: grid;
+      grid-template-columns: 132px 1fr;
+      gap: 14px;
+      padding: 15px 0;
+      border-top: 1px solid var(--line);
+    }
+    li:first-child { border-top: 0; padding-top: 0; }
+    .time { color: var(--blue); font-weight: 700; }
+    .detail { color: var(--muted); font-size: .92rem; }
+    .tag {
+      display: inline-block;
+      margin-right: 7px;
+      padding: 1px 8px;
+      color: var(--blue);
+      background: var(--accent);
+      border-radius: 99px;
+      font-size: .78rem;
+      font-weight: 700;
+    }
+    .car { width: 42px; height: 23px; vertical-align: middle; }
+    footer { padding: 22px 0 0; color: var(--muted); text-align: center; font-size: .82rem; }
+    @media (max-width: 520px) {
+      main { width: min(100% - 20px, 900px); margin-top: 10px; }
+      header, section { border-radius: 11px; }
+      li { grid-template-columns: 1fr; gap: 2px; }
+    }
+    @media print {
+      body { background: white; }
+      main { width: 100%; margin: 0; }
+      section { box-shadow: none; break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>五浦海岸 家族旅行プラン</h1>
+      <p>海辺の景色と美術館をゆったり楽しむ旅</p>
+    </header>
+
+    <section aria-labelledby="overview-title">
+      <h2 id="overview-title">旅程概要</h2>
+      <div class="overview">
+        <p><strong>行き先</strong>茨城県北茨城市・五浦海岸周辺</p>
+        <p><strong>宿泊</strong>1日目は五浦周辺、2日目は親族宅に宿泊</p>
+        <p><strong>移動</strong>自家用車 <svg class="car" viewBox="0 0 120 64" role="img" aria-label="白い自動車">
+          <path d="M12 43 18 27q2-6 10-7l19-3 13-12q4-4 12-4h18q9 0 15 8l9 13q5 2 6 8l1 13q0 5-6 5h-5a13 13 0 0 0-26 0H44a13 13 0 0 0-26 0h-4q-5 0-5-5v-6q0-5 3-7Z" fill="#fff" stroke="#334552" stroke-width="3"/>
+          <path d="m34 21 15-2 12-12h14v14Zm46 0V7h10q6 0 10 6l6 8Z" fill="#dbe7eb" stroke="#334552" stroke-width="2"/>
+          <circle cx="31" cy="49" r="8" fill="#334552"/><circle cx="96" cy="49" r="8" fill="#334552"/>
+          <circle cx="31" cy="49" r="3" fill="#dce5e9"/><circle cx="96" cy="49" r="3" fill="#dce5e9"/>
+        </svg></p>
+      </div>
+    </section>
+
+    <section aria-labelledby="day1">
+      <h2 id="day1">1日目｜五浦海岸へ</h2>
+      <ol>
+        <li>
+          <span class="time">朝</span>
+          <div><h3>出発・途中で合流</h3><div class="detail">合流後、休憩を取りながら北茨城方面へ。</div></div>
+        </li>
+        <li>
+          <span class="time">昼頃</span>
+          <div><h3>サービスエリアで早めの昼食</h3><div class="detail">混雑を避けて休憩を兼ねた昼食。</div></div>
+        </li>
+        <li>
+          <span class="time">午後</span>
+          <div><h3>六角堂を散策</h3><div class="detail">岡倉天心ゆかりの景勝地を、現地の状況に合わせて見学。</div></div>
+        </li>
+        <li>
+          <span class="time">午後</span>
+          <div><h3>五浦周辺の宿にチェックイン</h3><div class="detail">温泉と夕食を楽しみ、宿泊。</div></div>
+        </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="day2">
+      <h2 id="day2">2日目｜美術館と北茨城観光</h2>
+      <ol>
+        <li>
+          <span class="time">午前</span>
+          <div><h3>宿をチェックアウト</h3><div class="detail">ゆっくり準備して出発。</div></div>
+        </li>
+        <li>
+          <span class="time">午前</span>
+          <div><h3><span class="tag">基本プラン</span>茨城県天心記念五浦美術館を見学</h3><div class="detail">開館状況を事前に確認し、無理のないペースで見学。</div></div>
+        </li>
+        <li>
+          <span class="time">招待日時による</span>
+          <div><h3><span class="tag">予約が取れた場合</span>絵本美術館を見学</h3><div class="detail">「まどのそとのそのまたむこう」の招待日時が合う場合は、基本プランに代えて訪問。</div></div>
+        </li>
+        <li>
+          <span class="time">午前</span>
+          <div><h3><span class="tag">代替候補</span>野口雨情記念館</h3><div class="detail">開館状況などに応じて検討。</div></div>
+        </li>
+        <li>
+          <span class="time">昼頃</span>
+          <div><h3>北茨城周辺で昼食</h3><div class="detail">海の幸など、営業状況を確認して立ち寄り。</div></div>
+        </li>
+        <li>
+          <span class="time">午後</span>
+          <div><h3>親族宅へ移動・宿泊</h3><div class="detail">交通状況に合わせて途中休憩。</div></div>
+        </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="day3">
+      <h2 id="day3">3日目｜帰路</h2>
+      <ol>
+        <li>
+          <span class="time">朝</span>
+          <div><h3>一部の同行者が帰路へ</h3><div class="detail">道路状況を確認し、余裕を持って出発。</div></div>
+        </li>
+      </ol>
+    </section>
+
+    <footer>道路や施設の状況に応じて、時間・立ち寄り先は調整してください。</footer>
+  </main>
+</body>
+</html>
